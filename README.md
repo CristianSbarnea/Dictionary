@@ -1,7 +1,7 @@
-/* SBARNEA CRISTIAN-STEFAN - 314CB */
 
-    Aceasta este solutia mea pentru rezolvarea problemei propuse de doamna profesor.
-    Pentru inceput, am adaugat 2 noi structuri, T_Lungime si TCuvant. In tabela mea hash, am un 
+#Dictionary
+
+   Pentru inceput, am adaugat 2 noi structuri, T_Lungime si TCuvant. In tabela mea hash, am un 
 vector de liste generice. Void* info din fiecare lista generica va puncta catre o structura T_Lungime,
 unde exista o lungime si o alta lista generica, pe care am denumit-o sublista.
 Void* info din aceasta sublista, va puncta catre o structura TCuvant, unde voi stoca
@@ -19,5 +19,4 @@ toata tabela hash. Daca token-ul este o litera, voi folosi sscanf pentru a salva
 separate pentru a le putea da ca argumente functiei de printare. Daca token-ul este o cifra, folosesc iar sscanf.
 Mentionez ca inainte de fiecare printare voi sorta lista corespunzator.
     La sfarsit, eliberez toata memoria si inchid fisierul.
-    La testare pe calculatorul propriu, am obtinut 85/85 si 0 puncte pentru valgrind, din cauza unei erori
-"error calling pr_set_ptracer vgdb might block". 
+  
