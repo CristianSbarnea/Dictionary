@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
+#include <stdlib.h>
 #include "functii-TCuvant.h"
 #include "functii-TLungime.h"
 #include "functii-TLG.h"
