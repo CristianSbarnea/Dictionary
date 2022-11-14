@@ -1,5 +1,3 @@
-/* SBARNEA CRISTIAN-STEFAN - 314CB */
-
 #include "functii-TCuvant.h"
 #include <string.h>
 
