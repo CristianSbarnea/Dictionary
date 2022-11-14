@@ -1,4 +1,3 @@
-/* SBARNEA CRISTIAN-STEFAN - 314CB */
 #include "functii-TBHash.h"
 #include "functii-TLG.h"
 
