@@ -1,5 +1,3 @@
-/* SBARNEA CRISTIAN-STEFAN - 314CB */
-
 #include "functii-TLG.h"
 #include "functii-TCuvant.h"
 #include "functii-TLungime.h"
