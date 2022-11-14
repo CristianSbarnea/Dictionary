@@ -1,22 +1,33 @@
 
-#Dictionary
+# Dictionary
 
-   Pentru inceput, am adaugat 2 noi structuri, T_Lungime si TCuvant. In tabela mea hash, am un 
-vector de liste generice. Void* info din fiecare lista generica va puncta catre o structura T_Lungime,
-unde exista o lungime si o alta lista generica, pe care am denumit-o sublista.
-Void* info din aceasta sublista, va puncta catre o structura TCuvant, unde voi stoca
-o frecventa de aparitie a cuvintelor si cuvintele in sine.
-    In functii-TLungime.c si functii-TCuvant.c exista multe functii auxiliare care primesc void* info
-si fac automat cast la structura respectiva.
-    In functii-TLG.c am inclus functii care pot fi aplicate atat pe liste cat si pe subliste, intrucat
-sunt de tipul TLG amandoua.
-    In continuare, programul primeste din linia de comanda fisierul pe care trebuie sa-l deschida. Voi citi
-din acesta linie cu linie, si voi folosi strtok pentru a trece prin el. Verific daca primul cuvant din acea
-linie este "insert" si apoi merg mai departe cu strtok pana la urmatoarea linie si inserez cuvant cu cuvant in tabela 
-mea hash. Pentru fiecare cuvant voi aloca o singura data memorie, adica daca exista deja in sublista, doar voi incrementa frecventa.
-Daca cuvantul este "print", voi merge mai departe cu strtok si daca token-ul este NULL, fac afisarea pentru
-toata tabela hash. Daca token-ul este o litera, voi folosi sscanf pentru a salva litera si ce urmeaza in variabile
-separate pentru a le putea da ca argumente functiei de printare. Daca token-ul este o cifra, folosesc iar sscanf.
-Mentionez ca inainte de fiecare printare voi sorta lista corespunzator.
-    La sfarsit, eliberez toata memoria si inchid fisierul.
-  
+## Implementarea unui dictionar care contorizeaza cuvintele introduse si le ordoneaza alfabetic.
+
+Pentru inceput, programul citeste propozitii dintr-un fisier primit ca argument. Acesta separa cuvintele
+si le introduce in dictionar, contorizeaza cuvintele introduse si le ordoneaza in functie de lungime si mai 
+apoi alfabetic la afisare. 
+
+## Comenzi
+
+### insert
+
+Comanda insert spune programului ca va trebui sa insereze niste cuvinte, aflate dupa comanda respectiva.
+Aplicatia va separa cuvintele si le va introduce pe rand in dictionar, tinand cont de frecventa de 
+insertie a acestora.
+
+### print
+
+Comanda print va spune programului sa afiseze toate cuvintele, in ordine alfabetica si in functie de lungimile
+lor.
+
+### print 1
+
+Comanda print 1 va spune programului sa afiseze toate cuvintele care au fost introduse cel mult o singura data. De exemplu,
+comanda print 2 va afisa toate cuvintele cu frecventa de insertie cel mult 2.
+
+### print 'a' 1
+
+Comanda print 'a' 1 indica programului sa afiseze toate cuvintele care incep cu 'a' si care au fost introduse de cel mult o data.
+
+
+    
