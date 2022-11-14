@@ -1,5 +1,3 @@
-/* SBARNEA CRISTIAN-STEFAN - 314CB */
-
 #include <stdlib.h>
 #include <stdio.h>
 
