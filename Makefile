@@ -1,6 +1,6 @@
 build :
-	gcc -Wall -g -o tema1 *.c
+	gcc -Wall -g -o dictionary *.c
 run :
-	./tema1
+	./dictionary
 clean :
-	rm -rf tema1
+	rm -rf dictionary
