@@ -1,5 +1,3 @@
-/* SBARNEA CRISTIAN-STEFAN - 314CB */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "functii-TLG.h"
